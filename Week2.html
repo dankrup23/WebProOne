@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Web Programming 1 Assignments</title>
+	<!--This is the link to the stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/wk2.css">
+</head>
+
+<Body>
+
+<div id="container">
+<header>
+<div><br>
+<h1>Web Programming Assignments</h1>
+</div>			
+</header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  min-height: 1100px;
+  height: auto;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa";>
+<h2>Assignments</h2>
+<a href="index.html">Week 0</a>
+<br>
+<a href="Week1.html">Week 1</a>
+<br>
+<a href="Week2.html">Week 2</a>
+<br>
+  </div>
+
+  <div class="column right" style="background-color:white;">
+    <h2>Dan Krupa</h2>
+    <div id="imagesMain">
+    <img src="images/dkrupa2.jpg"> 
+    <img src="images/family2.jpg"> 
+    <img src="images/UofMpic2.jpg"> 
+    <img src="images/USFpic2.jpg">
+</div>
+
+<br>  <p>I am pursuing Graduate Certificates in Web Design and eLearning Development, and have also been accepted to the MS program in Learning Design and Technology. 
+In addition to USF, my education also includes a BS in Earth Science and an MS in Environmental Science, both from the University of Michigan.
+Currently, I work as a middle school science teacher, in a career spanning over 10 years in secondary education. In that time, I have gained first-hand 
+experience in using learning technologies to help students understand the necessary content, as well as 
+to keep them actively engaged. This is very important in gaining new knowledge. 
+My career experience also includes working in private industry as a Safety and Environmental Manager.
+Much of this has involved conducting trainings, as well as designing the content for those trainings. So, I was teaching even before I entered the
+education field!
+</p>
+
+<p>
+Whenever I have free time, I usually spend it with my family, mostly at Busch Gardens and Disney World. We also occassionally take trips around the state.
+I enjoy spending time outdoors and walking nature trails, especially with my science background. 
+</p>
+
+<br>
+<h2>Work Samples</h2>
+
+<div style="padding-left:50px">
+<button class="accordion">USF Promotional Video</button>
+<div class="panel">
+  <p>	<video width="550" controls>
+		<source src="videos/USF_Education.mp4" type"video/mp4">			
+	</video></p>
+</div>
+
+<button class="accordion">Photogrid</button>
+<div class="panel">
+  <p><img src="images/PhotogridSept2018.jpg"></p>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<br><br>
+</div>
+
+
+<footer>
+<div style="padding-left:30px">
+<br>
+This website was designed by Dan Krupa, 2021.
+</footer>
+				    
+</div>
+
+
+</Body>
+ 
+</html>
