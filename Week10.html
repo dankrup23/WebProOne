@@ -5,7 +5,7 @@
 <head>
 <title>Web Programming 1 Assignments</title>
 	<!--This is the link to the stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/wk2.css">
+	<link rel="stylesheet" type="text/css" href="css/wk10.css">
 </head>
 
 <Body>
@@ -27,7 +27,7 @@
 .column {
   float: left;
   padding: 10px;
-  min-height: 1100px;
+  min-height: 700px;
   height: auto;
 }
 
@@ -95,25 +95,20 @@ Much of this has involved conducting trainings, as well as designing the content
 education field!
 </p>
 
-<p>
-Whenever I have free time, I usually spend it with my family, mostly at Busch Gardens and Disney World. We also occassionally take trips around the state.
-I enjoy spending time outdoors and walking nature trails, especially with my science background. 
-</p>
+
 
 <br>
-<h2>Work Samples</h2>
+<h2>Date & Time</h2>
 
-<div style="padding-left:50px">
-<button class="accordion">USF Promotional Video</button>
-<div class="panel">
-  <p>	<video width="550" controls>
-		<source src="videos/USF_Education.mp4" type"video/mp4">			
-	</video></p>
-</div>
+<div style="padding-left:0px">
 
-<button class="accordion">Photogrid</button>
-<div class="panel">
-  <p><img src="images/PhotogridSept2018.jpg"></p>
+<p><span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
 </div>
 </div>
 
@@ -133,6 +128,9 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+
+
 
 <br><br>
 </div>
