@@ -7,13 +7,13 @@
 </head>
 
 <Body>
-	<div id="container">
-		<header>
-			<div style="padding-left:180px">
-			<h2 class="fontMargin">A Successful Classroom with</h2>
-			<h3>CHAMPS</h3>
-			</div>			
-		</header>
+<div id="container">
+<header>
+<div style="padding-left:180px">
+<h2 class="fontMargin">A Successful Classroom with</h2>
+<h3>CHAMPS</h3>
+</div>			
+</header>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,22 +66,74 @@ body {
 <div style="padding-left:100px">
 
   <h4>Movement</h4>
+<p>During some classroom activities, students will be required to move. This can occur, for example, while doing <br>
+group assignments or a lab activities. However, even during independent work, where students are mainly in their seats, <br>
+some movement may still be required. For these reasons, it is necessary for them to understand when and what kind of <br>
+movement is permitted, as well as how it is to be done.  
+</p><br><br>
 
 <p>	
-	<video width="550" controls>
-		<source src="videos/CHAMPS4.mp4" type"video/mp4">			
-	</video></p>
+<video width="550" controls>
+<source src="videos/CHAMPS4.mp4" type"video/mp4">			
+</video>
+</p>
  
 
+<br>
+<h5>Types of Movement</h5>
 
+<div style="padding-left:50px">
+<button class="accordion">Remain Seated</button>
+<div class="panel">
+<p>Used during teacher-led instruction
+</p>
+</div>
+
+<button class="accordion">Only with Permission</button>
+<div class="panel">
+<p>Used during independent work and tests/qizzes
+</p>
+</div>
+
+<button class="accordion">Limited Movement</button>
+<div class="panel">
+<p>Used during bell ringer and some group activities
+</p>
+</div>
+
+<button class="accordion">Move when Directed</button>
+<div class="panel">
+<p>Used during most lab and group activities
+</p>
+</div>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<br><br>
 </div>
 
 <footer>
 <div style="padding-left:100px">
 <br>
 This website was designed by Dan Krupa, 2021. Questions and feedback can be sent to my email: dkrupa@usf.edu
-</footer>
-				    
+</footer>				    
 </div>
 
 

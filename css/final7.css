@@ -62,6 +62,12 @@ header {
     margin-left: auto;*/
     margin: 0px auto 0px auto;
 }
+
+img {
+   position: absolute;
+   left: 200px;
+}
+
 #nav {
     height: 42px;
     background-color: #000000;

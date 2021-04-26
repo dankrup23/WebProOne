@@ -7,13 +7,13 @@
 </head>
 
 <Body>
-	<div id="container">
-		<header>
-			<div style="padding-left:180px">
-			<h2 class="fontMargin">A Successful Classroom with</h2>
-			<h3>CHAMPS</h3>
-			</div>			
-		</header>
+<div id="container">
+<header>
+<div style="padding-left:180px">
+<h2 class="fontMargin">A Successful Classroom with</h2>
+<h3>CHAMPS</h3>
+</div>			
+</header>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,6 +66,11 @@ body {
 <div style="padding-left:100px">
 
   <h4>Activity</h4>
+<p>During classroom instruction, students will always be doing some kind of activity. <br>
+Regardless of the what is is specifically,the activity will always fall into one of<br>
+three different categories: Listening to the teacher, Independent Work, or Partner Work. <br>
+Each category will have a different set of expectations.  
+</p><br><br>
 
 <p>	
 	<video width="550" controls>
@@ -73,15 +78,85 @@ body {
 	</video></p>
  
 
+<br>
+<h5>Types of Activities</h5>
 
+<div style="padding-left:50px">
+<button class="accordion">Listen to the Teacher</button>
+<div class="panel">
+<p>Conversation: <br>
+Silence <br><br>
+Help: <br>
+Raise Hand<br><br>
+Activity: <br>
+Note-taking, Question-Discussion, or Video<br><br>
+Movement: <br>
+Remain Seated<br><br>
+Participation: <br>
+Work as Directed<br><br>
+Success!
+</p>
+</div>
+
+<button class="accordion">Independent Work</button>
+<div class="panel">
+<p>Conversation: <br>
+Silence<br><br>
+Help: <br>
+Raise Hand<br><br>
+Activity: <br>
+Work alone at your seat<br><br>
+Movement: <br>
+Only with permission<br><br>
+Participation: <br>
+Work Independently<br><br>
+Success!
+</p>
+</div>
+
+<button class="accordion">Partner Work</button>
+<div class="panel">
+<p>Conversation: <br>
+Whisper Voice or Inside Voice<br><br>
+Help:<br>
+Ask partner or teacher<br><br>
+Activity: <br>
+Partner or Group Activity<br><br>
+Movement: <br>
+Move when directed<br><br>
+Participation: <br>
+Work as a team<br><br>
+Success!
+</p>
+</div>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<br><br>
 </div>
 
 <footer>
 <div style="padding-left:100px">
 <br>
 This website was designed by Dan Krupa, 2021. Questions and feedback can be sent to my email: dkrupa@usf.edu
-</footer>
-				    
+</footer>				    
 </div>
 
 

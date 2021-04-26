@@ -7,13 +7,13 @@
 </head>
 
 <Body>
-	<div id="container">
-		<header>
-			<div style="padding-left:180px">
-			<h2 class="fontMargin">A Successful Classroom with</h2>
-			<h3>CHAMPS</h3>
-			</div>			
-		</header>
+<div id="container">
+<header>
+<div style="padding-left:180px">
+<h2 class="fontMargin">A Successful Classroom with</h2>
+<h3>CHAMPS</h3>
+</div>			
+</header>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,22 +67,78 @@ body {
 
   <h4>Conversation</h4>
 
+<p>Controlling the conversation level in your classroom is essential in keeping your it well-ordered and maintained.<br>
+In fact, most classroom management issues occur because students are talking. However, it is not the fact that <br>
+they are talking, but what they are talking about that needs to be managed. As you will see in your classroom,<br>
+students often learn just as well from each other as they do the teacher. You can take advantage of this to increase <br>
+your student success. <br>
+</p><br><br>
+
 <p>	
-	<video width="550" controls>
-		<source src="videos/CHAMPS1.mp4" type"video/mp4">			
-	</video></p>
+<video width="550" controls>
+<source src="videos/CHAMPS1.mp4" type"video/mp4">			
+</video></p>
  
 
+<br><br>
+<h5>Conversation Levels</h5>
 
+<div style="padding-left:50px">
+<button class="accordion">Level 0</button>
+<div class="panel">
+<p class="accord1">No Talking</p>
+<p class="accord2">Students do not talk on this level<br>Usually posted during independent work, such as taking a test</p>
+</div>
+
+<button class="accordion">Level 1</button>
+<div class="panel">
+<p class="accord1">Whisper Voice</p>
+<p class="accord2">Students keep voice level to a whisper<br>Usually posted partner work</p>
+</div>
+
+<button class="accordion">Level 2</button>
+<div class="panel">
+<p class="accord1">Normal Voice</p>
+<p class="accord2">Students keep voice level to a normal conversation<br>Usually posted group work</p>
+</div>
+
+<button class="accordion">Level 3</button>
+<div class="panel">
+<p class="accord1">Outside Voice</p>
+<p class="accord2">Students talk they way they would outside<br>Usually posted during a class game or competition</p>
+</div>
+
+<br><br><br><br><br><br><br>
+<img src="images/CHAMPSconv.jpg">
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<br><br>
 </div>
 
 <footer>
 <div style="padding-left:100px">
 <br>
 This website was designed by Dan Krupa, 2021. Questions and feedback can be sent to my email: dkrupa@usf.edu
-</footer>
-				    
-		</div>
+</footer>				    
+</div>
 
 
 </Body>
