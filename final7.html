@@ -20,8 +20,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	
 <style>
+
 
 body {
   margin: 0;
@@ -52,6 +52,9 @@ body {
   color: white;
 }
 </style>
+
+
+
 </head>
 <body>
 
@@ -66,16 +69,105 @@ body {
   <a href="final7.html">Practice</a>
 </div>
 
-<div style="padding-left:100px">
 
-<br><br>
+<div style="padding-left:170px">
 
 
+<br>
 <img src="images/transform1.png"onMouseover="src='images/transform2.png'"
 onMouseout="src='images/transform1.png'">
 
+<br><br><br>
+ <h4>Practice</h4>
+<p>To practice using CHAMPS, you will first choose a specific Type of Classroom Lesson.<br>
+Then, select the correct category from each level of CHAMPS, based on what is appropriate <br>
+for that lesson. Once you have slected them all, click the "Submit" button and see if your <br>
+answers are correct.
+</p><br><br><br>
+
+
+
+            <div class="form-group">
+                <label for="age">Type of Lesson:</label><br>
+                <select class="form-control" id="lesson">
+                    <option value="0">Please select a category</option>
+                    <option value="teachInstr">Teacher Instruction</option>
+                    <option value="groupAct">Group Activity</option>
+                    <option value="indepWork">Independent Work</option>
+                    <option value="testQuiz">Test/Quiz</option>
+                </select>
+            </div><br><br><br>
+
+            <div class="form-group">
+                <label for="age">Conversation:</label><br>
+                <select class="form-control" id="conversation">
+                    <option value="0">Please select a category</option>
+                    <option value="absolSilence">Absolute Silence</option>
+                    <option value="silence">Silence</option>
+                    <option value="lowVoice">Low Voice</option>
+                    <option value="tablVoice">Table Voice</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Help:</label><br>
+                <select class="form-control" id="help">
+                    <option value="0">Please select a category</option>
+                    <option value="raisHand">Raise Hand</option>
+                    <option value="labPart">Ask your lab partner</option>
+                    <option value="askTeach">Ask your teacher</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Activity:</label><br>
+                <select class="form-control" id="activity">
+                    <option value="0">Please select a category</option>
+                    <option value="listenTeach">Listen to the Teacher</option>
+                    <option value="indepWork">Independent Work</option>
+                    <option value="partWork">Partner Work</option>
+                    <option value="grpWork">Group Work</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Movement:</label><br>
+                <select class="form-control" id="movement">
+                    <option value="0">Please select a category</option>
+                    <option value="remSeated">Remain Seated</option>
+                    <option value="onlyPerm">Only with permission</option>
+                    <option value="moveDirect">Move when directed</option>
+                    <option value="limitMove">Limited Movement</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Participation:</label><br>
+                <select class="form-control" id="participation">
+                    <option value="0">Please select a category</option>
+                    <option value="workIndep">Work Independently</option>
+                    <option value="workTeam">Work as a Team</option>
+                    <option value="workDirect">Work as Directed</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Success:</label><br>
+                <select class="form-control" id="success">
+                    <option value="0">Please select a category</option>
+                    <option value="success">Success</option>
+                </select>
+            </div>
+
+	    <br><br>
+            <button type="button" class="btn btn-primary" onclick="process_form()">Submit</button>
+            <!-- recommendation output area -->
+            <div id="output">
+
+            </div>
 
 </div>
+
 
 <footer>
 <div style="padding-left:100px">

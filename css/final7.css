@@ -18,8 +18,9 @@ h3 {
 }
 p {
     font-family: Times new roman;
-
+    font-size: 20px;
 }
+
 h4 {
     font-family: Britannic bold;
     font-size: 35px;
@@ -54,7 +55,7 @@ header {
 #container {
     position: relative;
     background-color: #ffffff;
-    height: 2000px;
+    height: 1500px;
     width: 1100px;
     /*margin-top: 0px;
     margin-right: auto;
@@ -62,12 +63,6 @@ header {
     margin-left: auto;*/
     margin: 0px auto 0px auto;
 }
-
-img {
-   position: absolute;
-   left: 200px;
-}
-
 #nav {
     height: 42px;
     background-color: #000000;
@@ -75,6 +70,8 @@ img {
     left: 0px;
     color: white;
 }
+
+
 
 #banner {
 	height: 30px;
