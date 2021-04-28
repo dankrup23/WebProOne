@@ -53,7 +53,71 @@ body {
 }
 </style>
 
+<script type="text/javascript">
 
+/*
+Here is the function to grade the quiz.
+*/
+function process_form()
+{
+
+var lesson = document.getElementById("lesson").value
+var conversation = document.getElementById("conversation").value;
+var help =  document.getElementById("help").value;
+var help =  document.getElementById("activity").value;
+var help =  document.getElementById("motivation").value;
+var help =  document.getElementById("participation").value;
+var help =  document.getElementById("success").value;
+
+var score = 0;
+switch(lesson) {
+    case "groupAct":
+    
+     if (conversation == "tablVoice")
+     score = score + 1;
+
+     if (help == "labPart")
+     score = score + 1;
+
+     if (activity == "labPart")
+     score = score + 1;
+
+     if (movement == "labPart")
+     score = score + 1;
+
+     if (participation == "labPart")
+     score = score + 1;
+
+     if (success == "labPart")
+     score = score + 1;
+
+     /*  you fill in the other parts for the other inputs.   */
+
+    /*  It would be better to put there score in an element in the html, but just to be quick, here  is an alert. */
+     alert("Your score is " + score);
+
+
+      break;
+   
+      case teachInstr:
+      // code block
+      break;
+    
+      /* you fill in the other drop down inputs */
+      case y:
+      // code block
+      break;
+
+      case y:
+      // code block
+      break;
+      
+    default:
+      // code block
+  }
+}
+
+</script>
 
 </head>
 <body>
